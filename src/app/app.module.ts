@@ -1,11 +1,13 @@
 //Angular modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 //Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
+//Bootstrap components
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -13,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     NgbModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],
