@@ -10,9 +10,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 //Bootstrap components
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+import { HeroComponent } from './hero/hero.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent],
   imports: [
     BrowserModule,
     NgbModule,
