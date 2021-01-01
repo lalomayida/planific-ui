@@ -1,18 +1,31 @@
+//Angular modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
+//Components
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+
+//Bootstrap components
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing.module';
+import { HeroComponent } from './hero/hero.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
+import { QualitiesComponent } from './qualities/qualities.component';
+import { DonateComponent } from './donate/donate.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    NgbModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

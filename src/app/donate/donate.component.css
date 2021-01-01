@@ -1,0 +1,27 @@
+.donate-container {
+    padding: 1rem 5rem;
+    text-align: center;
+  }
+  .donate-title {
+    font-size: 1.7rem;
+  }
+  .donate-button{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    font-weight: 600;
+    border-color: #66C7C9;
+    color: #66C7C9;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+  }
+  .donate-button:hover{
+    background-color: #66C7C9;
+    color: #ffffff;
+  }
+  .donate-image {
+    padding: 5rem 4rem;
+    width: 100%;
+  }
+  
+  
