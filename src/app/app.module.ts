@@ -13,9 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeroComponent } from './hero/hero.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { QualitiesComponent } from './qualities/qualities.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent],
   imports: [
     BrowserModule,
     NgbModule,
