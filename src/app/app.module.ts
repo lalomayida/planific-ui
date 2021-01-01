@@ -15,9 +15,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { QualitiesComponent } from './qualities/qualities.component';
 import { DonateComponent } from './donate/donate.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent],
   imports: [
     BrowserModule,
     NgbModule,
