@@ -9,6 +9,8 @@
 }
 .button-create{
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8rem;
   font-weight: 600;
   border-color: #66C7C9;
   color: #66C7C9;
