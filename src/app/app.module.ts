@@ -9,13 +9,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 //Bootstrap components
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent],
   imports: [
     BrowserModule,
     NgbModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
