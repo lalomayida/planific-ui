@@ -26,3 +26,29 @@
   padding: 9rem 4rem;
   width: 100%;
 }
+
+@media (max-width: 1200px) {
+  .quality {
+    padding: 5rem;
+  }
+  .quality-description {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .quality-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .qualities-container {
+    padding: 1rem 2rem;  }
+  .quality {
+    padding: 2rem;
+  }
+  .quality-image {
+    padding: 5rem 1rem;
+  }
+}
