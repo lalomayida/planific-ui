@@ -24,14 +24,19 @@
   color: #3b3c3b;
 }
 
-.create-button {
-  width: 130px;
-  background-color: #f5f6f9;
-  color: #95959e;
+.create-button{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8rem;
   font-weight: 600;
+  border-color: #66C7C9;
+  color: #66C7C9;
+  padding: .6rem 1.5rem;
 }
-.create-button:hover {
-  background-color: #f8f9fa;
+
+.create-button:hover{
+  background-color: #66C7C9;
+  color: #ffffff;
 }
 
 .svg-inline--fa.fa-w-14 {
