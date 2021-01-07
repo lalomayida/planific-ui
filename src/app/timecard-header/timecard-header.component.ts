@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-create-page',
-  templateUrl: './create-page.component.html',
-  styleUrls: ['./create-page.component.css']
+  selector: 'app-timecard-header',
+  templateUrl: './timecard-header.component.html',
+  styleUrls: ['./timecard-header.component.css']
 })
-export class CreatePageComponent implements OnInit {
+export class TimecardHeaderComponent implements OnInit {
 
   model: NgbDateStruct;
   today: NgbDateStruct;
@@ -21,5 +21,4 @@ export class CreatePageComponent implements OnInit {
     }    
     
   }
-
 }

@@ -2,13 +2,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+
+//Bootstrap components
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 //Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
-//Bootstrap components
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroComponent } from './hero/hero.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -17,13 +19,15 @@ import { QualitiesComponent } from './qualities/qualities.component';
 import { DonateComponent } from './donate/donate.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreatePageComponent } from './create-page/create-page.component';
+import { TimecardHeaderComponent } from './timecard-header/timecard-header.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent, CreatePageComponent],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent, CreatePageComponent, TimecardHeaderComponent],
   imports: [
     BrowserModule,
     NgbModule,
     RouterModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
