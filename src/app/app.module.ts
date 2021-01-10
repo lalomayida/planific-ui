@@ -20,9 +20,10 @@ import { DonateComponent } from './donate/donate.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreatePageComponent } from './create-page/create-page.component';
 import { TimecardHeaderComponent } from './timecard-header/timecard-header.component';
+import { TimecardGridComponent } from './timecard-grid/timecard-grid.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent, CreatePageComponent, TimecardHeaderComponent],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent, CreatePageComponent, TimecardHeaderComponent, TimecardGridComponent],
   imports: [
     BrowserModule,
     NgbModule,
