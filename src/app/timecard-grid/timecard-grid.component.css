@@ -1,0 +1,64 @@
+.timecard-container {
+  padding: 0rem 10rem 5rem 10rem;
+  text-align: center;
+}
+
+.timecard {
+  padding: 1rem;
+  background-color: #f5f6f9;
+}
+
+.timecard table {
+  width: 100%;
+}
+
+.timecard table .header {
+  padding: 1rem 0rem;
+  letter-spacing: 2px;
+}
+
+.timecard table .time {
+  padding-right: 1rem;
+  line-height: .8rem;
+  text-align: right;
+  color: #95959e;
+}
+
+.timecard table .time span {
+  font-weight: 700;
+  color: #171628;
+}
+
+.timecard table .available {
+  background-color: #66c7c9;
+}
+
+.timecard table .cell-border {
+  border: 1px dotted #f2f2f2;
+}
+
+.clickable-cell {
+  height: 1.7rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .timecard {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .timecard-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timecard-container {
+    padding: 1rem 2rem;
+  }
+  .timecard {
+    padding: 2rem;
+  }
+}

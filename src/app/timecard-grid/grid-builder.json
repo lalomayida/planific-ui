@@ -1,0 +1,582 @@
+{    "headers": ['Lalo', 'Daniela', 'Fernanda', 'Jesus'
+    ],
+    "data": [
+        {
+            "time": {
+               "hour": "0:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "0:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "1:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "1:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "2:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "2:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "3:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "3:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "4:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "4:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "5:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "5:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "6:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "6:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "7:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "7:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "8:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "8:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "9:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "9:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "10:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "10:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "11:00",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "11:30",
+                "meridian": "am"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "12:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "12:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+
+        {
+            "time": {
+                "hour": "1:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "1:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "2:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "2:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "3:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "3:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "4:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "4:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "5:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "5:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "6:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "6:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "7:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "7:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "8:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "8:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "9:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "9:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "10:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "10:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "11:00",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "time": {
+                "hour": "11:30",
+                "meridian": "pm"
+            },
+            "availability": [
+                true,
+                true,
+                false,
+                true
+            ]
+        }
+    ]
+}
