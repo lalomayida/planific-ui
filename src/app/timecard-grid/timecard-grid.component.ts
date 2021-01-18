@@ -1,4 +1,5 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, Input, OnInit, Renderer2 } from '@angular/core';
+import { TimecardDetails } from 'src/models/timecardDetails';
 
 @Component({
   selector: 'app-timecard-grid',
@@ -6,368 +7,42 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./timecard-grid.component.css'],
 })
 export class TimecardGridComponent implements OnInit {
-  timecardInformation;
+  
+  @Input() details:TimecardDetails;
+  @Input() id:string;
+
+  url:string;
 
   constructor(private render: Renderer2) {}
 
   ngOnInit(): void {
-    this.timecardInformation = {
-      headers: [
-        'Claudia Johnson',
-        'John Doe',
-        'Daniela Burke',
-        'Tammy Williams',
-      ],
-      data: [
-        {
-          time: {
-            hour: '0:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '0:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '1:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '1:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '2:00',
-            meridian: 'am',
-          },
-          availability: [true, false, false, true],
-        },
-        {
-          time: {
-            hour: '2:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '3:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '3:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '4:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '4:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '5:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '5:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '6:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '6:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '7:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '7:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '8:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '8:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '9:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '9:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '10:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '10:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '11:00',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '11:30',
-            meridian: 'am',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '12:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '12:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
+    this.url = "https://planific.io/timecards?="+this.id;
+    console.log(this.details)
+  }
 
-        {
-          time: {
-            hour: '1:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '1:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '2:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '2:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '3:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '3:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '4:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '4:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '5:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '5:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '6:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '6:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '7:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '7:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '8:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '8:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '9:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '9:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '10:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '10:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '11:00',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-        {
-          time: {
-            hour: '11:30',
-            meridian: 'pm',
-          },
-          availability: [true, true, false, true],
-        },
-      ],
-    };
+  trackByFn(index, treatment) {
+    return index;
   }
 
   selectCell(event) {
-    console.log(event);
-    if (event.srcElement.className.includes('busy')) {
-      this.render.removeClass(event.target, 'busy');
-      this.render.addClass(event.target, 'available');
-    } else {
-      this.render.removeClass(event.target, 'available');
-      this.render.addClass(event.target, 'busy');
-    }
+    var row = event.path[0].id;
+    var column = event.path[0].cellIndex;
+    this.details.data[row].availability[column - 1] = !this
+      .details.data[row].availability[column - 1];
   }
+
+  copyUrl(){
+    let selBox = document.createElement('textarea');
+      selBox.style.position = 'fixed';
+      selBox.style.left = '0';
+      selBox.style.top = '0';
+      selBox.style.opacity = '0';
+      selBox.value = this.url;
+      document.body.appendChild(selBox);
+      selBox.focus();
+      selBox.select();
+      document.execCommand('copy');
+      document.body.removeChild(selBox);
+    }
+
 }

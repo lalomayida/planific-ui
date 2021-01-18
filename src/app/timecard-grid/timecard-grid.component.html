@@ -2,35 +2,58 @@
   <div class="col-md-12">
     <div class="os-animation" data-animation="fadeInLeft">
       <div class="timecard">
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th
-                class="header"
-                *ngFor="let header of timecardInformation.headers"
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th width="5%"></th>
+                <th
+                  width="{{ 95 / details.headers.length }}%"
+                  class="header"
+                  *ngFor="
+                    let header of details.headers;
+                    let j = index;
+                    trackBy: trackByFn
+                  "
+                >
+                  <input
+                    type="text"
+                    [(ngModel)]="details.headers[j]"
+                  />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                *ngFor="let timecard of details.data; let i = index"
               >
-                {{ header }}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let timecard of timecardInformation.data">
-              <td *ngIf="timecard.time.hour.includes(':00')" class="time">
-                <span>{{ timecard.time.hour }}</span><br/>{{
-                  timecard.time.meridian
-                }}
-              </td>
-              <td *ngIf="timecard.time.hour.includes(':30')" class="time"></td>
-              <td
-                *ngFor="let personTime of timecard.availability"
-                class="cell-border clickable-cell"
-                (click)="selectCell($event)"
-                [ngClass]="[personTime === false ? 'available' : 'busy']"
-              ></td>
-            </tr>
-          </tbody>
-        </table>
+                <td *ngIf="timecard.time.hour.includes(':00')" class="time">
+                  <span>{{ timecard.time.hour }}</span
+                  ><br />{{ timecard.time.meridian }}
+                </td>
+                <td
+                  *ngIf="timecard.time.hour.includes(':30')"
+                  class="time"
+                  id="{{ i }}"
+                ></td>
+                <td
+                  *ngFor="let personTime of timecard.availability"
+                  class="cell-border clickable-cell"
+                  id="{{ i }}"
+                  (click)="selectCell($event)"
+                  [ngClass]="[personTime === false ? 'busy' : 'available']"
+                ></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="timecard-link">
+        <h2>Share this timecard</h2>
+        <div class="timecard-link-buttons row">
+          <a class="timecard-url">{{url}}</a>
+          <a class="btn btn-lg copy-button" (click)="copyUrl()">Copy link</a>
+        </div>
       </div>
     </div>
   </div>

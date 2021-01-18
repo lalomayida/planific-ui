@@ -1,13 +1,13 @@
 <div class="jumbotron jumbotron-fluid text-center">
   <div class="container jumbotron-childs">
-    <h1 class="display-3 phrase">{{ timecardTitle }}</h1>
-
+    <h1 class="display-3 phrase">
+      <input type="text" [(ngModel)]="title"></h1>
     <div class="input-group">
       <input
         class="form-control"
         placeholder="Select a date"
         name="dp"
-        [(ngModel)]="model"
+        [(ngModel)]="date"
         ngbDatepicker
         [minDate]="today"
         #d="ngbDatepicker"

@@ -2,9 +2,21 @@
   background-color: transparent;
   padding-bottom: 0px;
 }
-.phrase {
+.phrase input{
   font-weight: 600;
+  background-color: transparent;
+  border: 0px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow-wrap: break-word;
 }
+
+.phrase input:focus {
+  outline: none;
+  color: #95959e;
+}
+
 .jumbotron-childs > * {
   padding-bottom: 2rem;
 }

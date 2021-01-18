@@ -4,10 +4,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-
 //Bootstrap components
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { ClipboardModule } from 'ngx-clipboard';
 //Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -29,7 +28,8 @@ import { TimecardGridComponent } from './timecard-grid/timecard-grid.component';
     NgbModule,
     RouterModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
