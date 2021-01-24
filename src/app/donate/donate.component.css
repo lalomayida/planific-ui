@@ -24,4 +24,10 @@
     width: 100%;
   }
   
+  @media (max-width: 768px) {
+    .donate-image {
+      padding: 3rem 0rem;
+      width: 100%;
+    }
+  }
   
