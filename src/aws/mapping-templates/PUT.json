@@ -1,0 +1,31 @@
+#set($inputRoot = $input.path('$'))
+{
+  "id" : "$inputRoot.id",
+  "date" : "$inputRoot.date",
+  "title" : "$inputRoot.title",
+  "details" : {
+    "headers" : [
+      #foreach($elem in $inputRoot.details.headers)
+        "$elem"
+      #if($foreach.hasNext),#end
+      #end
+    ],
+    "data" : [
+    #foreach($slot in $inputRoot.details.data)
+      {
+        "time" : {
+          "hour" : "$slot.time.hour",
+          "meridian" : "$slot.time.meridian"
+        },
+        "availability" : [
+          #foreach($participantTime in $slot.availability)
+          $participantTime
+          #if($foreach.hasNext),#end
+          #end
+          ]
+        } 
+    #if($foreach.hasNext),#end
+    #end
+    ]
+  }
+}
