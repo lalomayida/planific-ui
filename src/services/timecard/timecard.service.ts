@@ -11,7 +11,7 @@ const restOptions = {
 };
 
 @Injectable({ providedIn: 'root' })
-export class DeparmentService {
+export class TimecardService {
   constructor(private http: HttpClient) {}
   private timecard =
     'https://1k3tsc1ik3.execute-api.us-east-2.amazonaws.com/prod/timecards/';
@@ -21,7 +21,7 @@ export class DeparmentService {
       .get<any>(this.timecard, {
         params: id,
       })
-      .pipe(catchError(this.handleError('getDepartment', [])));
+      .pipe(catchError(this.handleError('getTimecard', [])));
   }
 
   createTimecard(): Observable<any> {

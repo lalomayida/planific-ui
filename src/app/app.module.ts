@@ -1,5 +1,6 @@
 //Angular modules
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -29,7 +30,8 @@ import { TimecardGridComponent } from './timecard-grid/timecard-grid.component';
     RouterModule,
     FormsModule,
     AppRoutingModule,
-    ClipboardModule
+    ClipboardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
