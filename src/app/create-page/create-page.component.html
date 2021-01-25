@@ -1,2 +1,2 @@
 <app-timecard-header [title]="timecard.title" [date]="timecard.date" ></app-timecard-header>
-<app-timecard-grid [id]="timecard.id" [details]="timecard.details" ></app-timecard-grid>
+<app-timecard-grid [id]="timecard.id" [details]="timecard.details" (onEdit)="updateTimecard($event)"></app-timecard-grid>

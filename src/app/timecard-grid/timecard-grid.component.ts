@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Renderer2 } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
 import { TimecardDetails } from 'src/app/models/timecardDetails';
 
 @Component({
@@ -10,6 +10,7 @@ export class TimecardGridComponent implements OnInit {
   
   @Input() details:TimecardDetails;
   @Input() id:string;
+  @Output() onEdit: EventEmitter<any> = new EventEmitter();
 
   url:string;
 
@@ -29,7 +30,10 @@ export class TimecardGridComponent implements OnInit {
     var column = event.path[0].cellIndex;
     this.details.data[row].availability[column - 1] = !this
       .details.data[row].availability[column - 1];
+    this.onEdit.emit(this.details);
   }
+
+
 
   copyUrl(){
     let selBox = document.createElement('textarea');

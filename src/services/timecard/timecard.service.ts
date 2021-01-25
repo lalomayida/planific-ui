@@ -30,7 +30,7 @@ export class TimecardService {
       .pipe(catchError(this.handleError('getDepartment', [])));
   }
 
-  updateTimecar(timecard): Observable<any> {
+  updateTimecard(timecard): Observable<any> {
     return this.http
       .put<any>(this.timecard,timecard)
       .pipe(catchError(this.handleError('getDepartment', [])));
