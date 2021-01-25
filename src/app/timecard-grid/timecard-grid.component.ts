@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Renderer2 } from '@angular/core';
-import { TimecardDetails } from 'src/models/timecardDetails';
+import { TimecardDetails } from 'src/app/models/timecardDetails';
 
 @Component({
   selector: 'app-timecard-grid',

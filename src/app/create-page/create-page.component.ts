@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
-import { Timecard } from 'src/models/timecard';
+import { Timecard } from 'src/app/models/timecard';
 
 @Component({
   selector: 'app-create-page',
