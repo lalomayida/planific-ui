@@ -1,4 +1,3 @@
-
 #set($inputRoot = $input.path('$'))
 {
   "id" : "$inputRoot.id",
