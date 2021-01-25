@@ -33,8 +33,6 @@ export class TimecardGridComponent implements OnInit {
     this.onEdit.emit(this.details);
   }
 
-
-
   copyUrl(){
     let selBox = document.createElement('textarea');
       selBox.style.position = 'fixed';

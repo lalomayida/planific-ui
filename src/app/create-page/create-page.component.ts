@@ -37,10 +37,10 @@ export class CreatePageComponent implements OnInit {
           console.log(error, "Mandar a pàgina 404");
         })
     } else {
-      /*this.timecardService.createTimecard().subscribe(
-        (result)=>{*/
+      this.timecardService.createTimecard().subscribe(
+        (result)=>{
         this.timecard = {
-          id: 'result.id',
+          id: result.id,
           date: this.model,
           title: 'My meeting title',
           details: {
@@ -307,9 +307,9 @@ export class CreatePageComponent implements OnInit {
             ],
           },
         };
-      /*},(error)=>{
+      },(error)=>{
         console.log(error,"Error when creating timecard, and redirect to main page")
-      })     */
+      })     
     }
   }
 
