@@ -314,6 +314,8 @@ export class CreatePageComponent implements OnInit {
   }
 
   updateTimecard(event){
-    this.timecardService.updateTimecard(event)
+    console.log(event)
+    console.log(this.timecard)
+    this.timecardService.updateTimecard(this.timecard)
   }
 }
