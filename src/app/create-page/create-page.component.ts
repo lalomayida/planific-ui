@@ -40,6 +40,7 @@ export class CreatePageComponent implements OnInit {
     } else {
       this.timecardService.createTimecard().subscribe(
         (result)=>{
+          console.log(result)
         this.timecard = {
           id: result.id,
           date: this.model,
