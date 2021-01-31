@@ -1,5 +1,6 @@
 .advantage-container {
-  padding: 3rem 5rem;
+  padding: 10rem 5rem 3rem 5rem;
+  margin-top: -10rem;
 }
 .advantage {
   border-left: 3px solid #f5f6f9;
@@ -12,9 +13,10 @@
     color:#95959E;
     line-height: 2rem;
 }
-
 @media (max-width: 480px) {
   .advantage-container {
-    padding: 2rem 3rem;
+    padding: 10rem 3rem 2rem 3rem;
+    margin-top: -10rem;
+
   }
 }
