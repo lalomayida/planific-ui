@@ -5,8 +5,15 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+}
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
 }

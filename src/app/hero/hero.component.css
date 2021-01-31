@@ -7,17 +7,23 @@
 .jumbotron-childs > * {
   padding-bottom: 2rem;
 }
-.button-create{
+.button-create {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  border-color: #66C7C9;
-  color: #66C7C9;
+  border-color: #66c7c9;
+  color: #66c7c9;
   padding: 1rem 1.5rem;
 }
 
-.button-create:hover{
-  background-color: #66C7C9;
+.button-create:hover {
+  background-color: #66c7c9;
   color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .phrase {
+    font-size: 3rem;
+  }
 }

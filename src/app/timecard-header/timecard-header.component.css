@@ -2,6 +2,7 @@
   background-color: transparent;
   padding-bottom: 0px;
 }
+
 .phrase input{
   font-weight: 600;
   background-color: transparent;
@@ -51,4 +52,10 @@
   font-size: 0.8rem;
   color: #95959e;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .phrase {
+    font-size: 3rem;
+  }
 }
