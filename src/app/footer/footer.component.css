@@ -1,0 +1,38 @@
+.page-footer {
+  padding: 3rem 5rem;
+  border-top: 3px solid #f5f6f9;
+  text-align: left;
+}
+.footer-column {
+  text-align: left;
+}
+.footer-title {
+  font-size: 0.8rem;
+}
+.product-menu{
+    margin-left: 0;
+    padding-left: 0;
+}
+.product-menu li {
+  list-style: none;
+}
+a, p{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #95959e;
+}
+a:hover{
+    color:#7F7F89;
+}
+.company-information .brand{
+    font-size: 1.3rem;
+}
+
+.company-information img{
+    padding-right: 0.5rem;
+}
+
+.company-information .company-description{
+    padding-top: 1rem;
+}
+

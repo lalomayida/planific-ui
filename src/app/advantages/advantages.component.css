@@ -1,0 +1,26 @@
+.advantage-container {
+  padding: 10rem 5rem 3rem 5rem;
+  margin-top: -10rem;
+}
+.advantage {
+  border-left: 3px solid #f5f6f9;
+  padding-left: 3rem;
+}
+.advantage img{
+    padding-bottom: 2rem;;
+}
+.advantage p, .attribution{
+    color:#95959E;
+    line-height: 2rem;
+}
+.attribution{
+  font-size: .5rem;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .advantage-container {
+    padding: 10rem 3rem 2rem 3rem;
+    margin-top: -10rem;
+
+  }
+}

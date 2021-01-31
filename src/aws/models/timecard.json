@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "object",
+      "properties":{
+          "day":{
+              "type":"number"
+          },
+          "month":{
+              "type":"number"
+          },
+          "year":{
+              "type":"number"
+          }
+      }
+    },
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "object",
+      "properties": {
+        "headers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "time": {
+                "type": "object",
+                "properties": {
+                  "hour": {
+                    "type": "string"
+                  },
+                  "meridian": {
+                    "type": "string"
+                  }
+                }
+              },
+              "availability": {
+                "type": "array",
+                "items": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

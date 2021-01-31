@@ -1,0 +1,61 @@
+.jumbotron {
+  background-color: transparent;
+  padding-bottom: 0px;
+}
+
+.phrase input{
+  font-weight: 600;
+  background-color: transparent;
+  border: 0px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.phrase input:focus {
+  outline: none;
+  color: #95959e;
+}
+
+.jumbotron-childs > * {
+  padding-bottom: 2rem;
+}
+
+.input-group {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form-control {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-color: #66c7c9;
+  color: #66c7c9;
+  padding: 1rem 1.5rem;
+}
+
+.btn {
+  padding: 2px 15px !important;
+  border-color: #66c7c9;
+}
+
+.btn:hover,
+.btn:active {
+  color: #ffffff;
+  background-color: #66c7c9;
+}
+
+.tip {
+  font-size: 0.8rem;
+  color: #95959e;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .phrase {
+    font-size: 3rem;
+  }
+}
