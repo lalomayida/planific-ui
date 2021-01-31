@@ -1,30 +1,19 @@
 <div class="jumbotron jumbotron-fluid text-center">
   <div class="container jumbotron-childs">
     <h1 class="display-3 phrase">
-      <input type="text" [(ngModel)]="title"></h1>
+      <input type="text" [(ngModel)]="title" (blur)="editTitle()" />
+    </h1>
     <div class="input-group">
-      <input
-        class="form-control"
-        placeholder="Selecciona una fecha"
-        name="dp"
-        [(ngModel)]="date"
-        ngbDatepicker
-        [minDate]="today"
-        #d="ngbDatepicker"
-      />
+      <input class="form-control" placeholder="Selecciona una fecha" name="dp" [(ngModel)]="date" ngbDatepicker
+        [minDate]="today" #d="ngbDatepicker" (dateSelect)="editDate()" />
       <div class="input-group-append">
-        <button
-          class="btn btn-outline-secondary"
-          (click)="d.toggle()"
-          type="button"
-        >
+        <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
           <i class="fas fa-calendar"></i>
         </button>
       </div>
     </div>
     <div class="tip col-md-4">
-      <P
-        >Tip: Presiona en las casillas para indicar los espacios en los que tienes tiempo libre
+      <P>Tip: Presiona en las casillas para indicar los espacios en los que tienes tiempo libre
       </P>
     </div>
   </div>

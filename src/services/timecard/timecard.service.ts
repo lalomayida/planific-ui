@@ -18,9 +18,7 @@ export class TimecardService {
 
   getTimecard(id): Observable<any> {
     return this.http
-      .get<any>(this.timecard, {
-        params: id,
-      })
+      .get<any>(this.timecard+id)
       .pipe(catchError(this.handleError('getTimecard', [])));
   }
 

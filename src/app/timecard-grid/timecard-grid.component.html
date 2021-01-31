@@ -19,6 +19,7 @@
                   <input
                     type="text"
                     [(ngModel)]="details.headers[j]"
+                    (blur)="changeNames()"
                   />
                 </th>
               </tr>

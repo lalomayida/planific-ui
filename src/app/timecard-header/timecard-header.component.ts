@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -10,6 +10,9 @@ export class TimecardHeaderComponent implements OnInit {
  
   @Input() title: string;
   @Input() date: NgbDateStruct;
+  
+  @Output() onEditTitle: EventEmitter<any> = new EventEmitter();
+  @Output() onEditDate: EventEmitter<any> = new EventEmitter();
 
   today: NgbDateStruct;
 
@@ -17,5 +20,13 @@ export class TimecardHeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.today = this.calendar.getToday();
+  }
+
+  editTitle(){
+    this.onEditTitle.emit(this.title);
+  }
+
+  editDate(){
+    this.onEditDate.emit(this.date);
   }
 }
