@@ -1,3 +1,7 @@
+<div *ngIf="!this.timecard.id" class="row spinner-container">
+    <div class="spinner spinner-border"></div>
+</div>
+
 <app-timecard-header 
     *ngIf="this.timecard.id" 
     [title]="this.timecard.title" 
