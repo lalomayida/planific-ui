@@ -18,7 +18,7 @@ export class TimecardGridComponent implements OnInit {
   constructor(private render: Renderer2) { }
 
   ngOnInit(): void {
-    this.url = "http://planific.io/create?=id" + this.id;
+    this.url = "www.planific.io/create?id=" + this.id;
   }
 
   trackByFn(index, treatment) {
