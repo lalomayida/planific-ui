@@ -1,0 +1,15 @@
+<app-timecard-header 
+    *ngIf="this.timecard.id" 
+    [title]="this.timecard.title" 
+    [date]="this.timecard.date"
+    (onEditTitle)="updateTitle($event)" 
+    (onEditDate)="updateDate($event)"
+    >
+</app-timecard-header>
+<app-timecard-grid 
+    *ngIf="this.timecard.id" 
+    [id]="this.timecard.id" 
+    [details]="this.timecard.details"
+    (onEdit)="updateTimecard($event)"
+    >
+</app-timecard-grid>

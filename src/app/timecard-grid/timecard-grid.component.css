@@ -1,0 +1,136 @@
+.timecard-container {
+  padding: 0rem 10rem 5rem 10rem;
+  text-align: center;
+}
+
+.timecard {
+  padding: 1rem;
+  background-color: #f5f6f9; 
+}
+
+.timecard div{
+  overflow-x:auto;
+}
+
+.timecard div table {
+  width: 100%;
+  min-width: 650px;
+}
+
+.timecard div table .header input {
+  width: 100%;
+  padding: 1rem 0rem;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.timecard div table .header input:focus {
+  outline: none;
+  color: #95959e;
+}
+
+.timecard div table .time {
+  padding-right: 1rem;
+  line-height: 0.8rem;
+  text-align: right;
+  color: #95959e;
+}
+
+.timecard div table .time span {
+  font-weight: 700;
+  color: #171628;
+}
+
+.timecard div table .available {
+  background-color: #66c7c9;
+}
+
+.timecard div table .cell-border {
+  border: 1px dotted #cfcdcd;
+}
+
+.clickable-cell {
+  height: 1.7rem;
+  cursor: pointer;
+}
+
+.timecard-link {
+  padding: 5rem 5rem;
+  text-align: center;
+}
+.timecard-link h2{
+  font-size: 1.7rem;
+}
+
+.timecard-link-buttons{
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+}
+
+.timecard-url{
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: .8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #F5F6F9;
+  color: #95959E;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  margin-right: 1rem;
+}
+
+.copy-button{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8rem;
+  font-weight: 600;
+  border-color: #66C7C9;
+  color: #66C7C9;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+}
+.copy-button:hover{
+  background-color: #66C7C9;
+  color: #ffffff;
+}
+
+.copy-button:active{
+  background-color: #5cb3b4;
+}
+
+.description {
+  margin: 0 auto;
+  width: 45%;
+  padding: 2rem 0rem 4rem 0rem;
+  font-size: 1rem;
+  color: #95959e;
+  line-height: 2rem;
+}
+
+
+@media (max-width: 1200px) {
+  .description{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .timecard-description {
+    width: 100%;
+  }
+  .description{
+    padding: 2rem 0rem 1rem 0rem;
+  }
+  .timecard-link {
+    padding: 2rem 1rem;}
+  .timecard-container {
+    padding: 0rem 2rem 5rem 2rem; 
+  }
+}
+

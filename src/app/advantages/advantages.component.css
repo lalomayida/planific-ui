@@ -1,0 +1,14 @@
+.advantage-container {
+  padding: 3rem 5rem;
+}
+.advantage {
+  border-left: 3px solid #f5f6f9;
+  padding-left: 3rem;
+}
+.advantage img{
+    padding-bottom: 2rem;;
+}
+.advantage p{
+    color:#95959E;
+    line-height: 2rem;
+}
