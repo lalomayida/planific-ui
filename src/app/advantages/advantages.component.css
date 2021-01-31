@@ -9,9 +9,13 @@
 .advantage img{
     padding-bottom: 2rem;;
 }
-.advantage p{
+.advantage p, .attribution{
     color:#95959E;
     line-height: 2rem;
+}
+.attribution{
+  font-size: .5rem;
+  text-align: center;
 }
 @media (max-width: 480px) {
   .advantage-container {
