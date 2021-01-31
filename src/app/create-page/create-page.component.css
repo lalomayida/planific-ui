@@ -1,0 +1,9 @@
+.spinner-container{
+    align-items: center;
+    height: 90%;
+}
+.spinner{
+    margin: 0 auto;
+    padding: 3rem;
+    color: #66c7c9;
+}

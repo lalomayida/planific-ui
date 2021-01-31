@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 //Bootstrap components
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClipboardModule } from 'ngx-clipboard';
+
 //Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
