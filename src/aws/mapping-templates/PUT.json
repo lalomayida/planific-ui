@@ -1,7 +1,11 @@
 #set($inputRoot = $input.path('$'))
 {
   "id" : "$inputRoot.id",
-  "date" : "$inputRoot.date",
+  "date" : {
+    "day":"$inputRoot.date.day",
+    "month":"$inputRoot.date.month",
+    "year":"$inputRoot.date.year",
+},
   "title" : "$inputRoot.title",
   "details" : {
     "headers" : [

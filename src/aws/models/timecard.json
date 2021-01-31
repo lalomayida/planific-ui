@@ -5,7 +5,18 @@
       "type": "string"
     },
     "date": {
-      "type": "string"
+      "type": "object",
+      "properties":{
+          "day":{
+              "type":"number"
+          },
+          "month":{
+              "type":"number"
+          },
+          "year":{
+              "type":"number"
+          }
+      }
     },
     "title": {
       "type": "string"

@@ -7,18 +7,18 @@ import { TimecardDetails } from 'src/app/models/timecardDetails';
   styleUrls: ['./timecard-grid.component.css'],
 })
 export class TimecardGridComponent implements OnInit {
+
+  @Input() details: TimecardDetails;
+  @Input() id: string;
   
-  @Input() details:TimecardDetails;
-  @Input() id:string;
   @Output() onEdit: EventEmitter<any> = new EventEmitter();
 
-  url:string;
+  url: string;
 
-  constructor(private render: Renderer2) {}
+  constructor(private render: Renderer2) { }
 
   ngOnInit(): void {
-    this.url = "https://planific.io/timecards?="+this.id;
-    console.log(this.details)
+    this.url = "www.planific.io/create?id=" + this.id;
   }
 
   trackByFn(index, treatment) {
@@ -33,18 +33,22 @@ export class TimecardGridComponent implements OnInit {
     this.onEdit.emit(this.details);
   }
 
-  copyUrl(){
+  changeNames(){
+    this.onEdit.emit(this.details);
+  }
+
+  copyUrl() {
     let selBox = document.createElement('textarea');
-      selBox.style.position = 'fixed';
-      selBox.style.left = '0';
-      selBox.style.top = '0';
-      selBox.style.opacity = '0';
-      selBox.value = this.url;
-      document.body.appendChild(selBox);
-      selBox.focus();
-      selBox.select();
-      document.execCommand('copy');
-      document.body.removeChild(selBox);
-    }
+    selBox.style.position = 'fixed';
+    selBox.style.left = '0';
+    selBox.style.top = '0';
+    selBox.style.opacity = '0';
+    selBox.value = this.url;
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
+  }
 
 }

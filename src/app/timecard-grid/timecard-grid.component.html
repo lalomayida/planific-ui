@@ -19,6 +19,7 @@
                   <input
                     type="text"
                     [(ngModel)]="details.headers[j]"
+                    (blur)="changeNames()"
                   />
                 </th>
               </tr>
@@ -49,10 +50,11 @@
         </div>
       </div>
       <div class="timecard-link">
-        <h2>Share this timecard</h2>
+        <h2>Comparte esta reunión</h2>
+        <p class="description">Todas las reuniones se eliminarán de forma automática dos días después de la fecha indicada</p>
         <div class="timecard-link-buttons row">
           <a class="timecard-url">{{url}}</a>
-          <a class="btn btn-lg copy-button" (click)="copyUrl()">Copy link</a>
+          <a class="btn btn-lg copy-button" (click)="copyUrl()">Copiar link</a>
         </div>
       </div>
     </div>
