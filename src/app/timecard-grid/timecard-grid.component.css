@@ -48,6 +48,10 @@
   background-color: #66c7c9;
 }
 
+.timecard div table .whole-match {
+  background-color: #19B5B1 !important;
+}
+
 .timecard div table .cell-border {
   border: 1px dotted #cfcdcd;
 }

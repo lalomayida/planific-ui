@@ -10,16 +10,26 @@ export class TimecardGridComponent implements OnInit {
 
   @Input() details: TimecardDetails;
   @Input() id: string;
-  
+
   @Output() onEdit: EventEmitter<any> = new EventEmitter();
 
   url: string;
-
+ sampleArray: any;
   constructor(private render: Renderer2) { }
 
   ngOnInit(): void {
     this.url = "www.planific.io/create?id=" + this.id;
+    this.sampleArray = [true, true, true, true]
+    console.log(this.arraysEqual(this.details.data[0].availability,this.sampleArray))
   }
+
+   arraysEqual(a, b) {
+    if (a === b) return true;
+    for (var i = a.length; i--;) {
+        if (a[i] !== b[i]) return false;
+    }
+    return true;
+}
 
   trackByFn(index, treatment) {
     return index;
@@ -33,7 +43,7 @@ export class TimecardGridComponent implements OnInit {
     this.onEdit.emit(this.details);
   }
 
-  changeNames(){
+  changeNames() {
     this.onEdit.emit(this.details);
   }
 

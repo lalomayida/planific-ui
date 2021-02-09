@@ -42,7 +42,7 @@
                   class="cell-border clickable-cell"
                   id="{{ i }}"
                   (click)="selectCell($event)"
-                  [ngClass]="[personTime === false ? 'busy' : 'available']"
+                  [ngClass]="{'busy': personTime === false ,'available': personTime === true , 'whole-match': arraysEqual(timecard.availability,sampleArray)}"
                 ></td>
               </tr>
             </tbody>

@@ -50,7 +50,7 @@ export class CreatePageComponent implements OnInit {
           this.timecard = {
             id: result.id,
             date: this.model,
-            title: 'Mi reunión',
+            title: 'Título',
             details: {
               headers: [
                 'Participante 1',
