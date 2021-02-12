@@ -53,10 +53,10 @@ export class CreatePageComponent implements OnInit {
             title: 'Título',
             details: {
               headers: [
-                'Participante 1',
-                'Participante 2',
-                'Participante 3',
-                'Participante 4',
+                'Participante',
+                'Participante',
+                'Participante',
+                'Participante',
               ],
               data: [
                 {

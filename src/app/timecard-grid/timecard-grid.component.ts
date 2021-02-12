@@ -14,25 +14,51 @@ export class TimecardGridComponent implements OnInit {
   @Output() onEdit: EventEmitter<any> = new EventEmitter();
 
   url: string;
- sampleArray: any;
+  sampleArray: any = [];
   constructor(private render: Renderer2) { }
 
   ngOnInit(): void {
     this.url = "www.planific.io/create?id=" + this.id;
-    this.sampleArray = [true, true, true, true]
-    console.log(this.arraysEqual(this.details.data[0].availability,this.sampleArray))
+    
+    for (let index = 0; index < this.details.headers.length; index++) {
+      this.sampleArray.push(true) 
+    }
+
+    console.log(this.arraysEqual(this.details.data[0].availability, this.sampleArray))
   }
 
-   arraysEqual(a, b) {
+  arraysEqual(a, b) {
     if (a === b) return true;
     for (var i = a.length; i--;) {
-        if (a[i] !== b[i]) return false;
+      if (a[i] !== b[i]) return false;
     }
     return true;
-}
+  }
 
   trackByFn(index, treatment) {
     return index;
+  }
+
+  addColumn() {
+    if (this.sampleArray.length < 7) {
+      this.sampleArray.push(true)
+      this.details.headers.push('Participante');
+      this.details.data.forEach(slot => {
+        slot.availability.push(false)
+      });
+      this.onEdit.emit(this.details);
+    }
+  }
+
+  deleteColumn(columnId) {
+    if (this.sampleArray.length > 1) {
+      this.sampleArray.pop()
+      this.details.headers.splice(columnId, 1);
+      this.details.data.forEach(slot => {
+        slot.availability.splice(columnId, 1)
+      });
+      this.onEdit.emit(this.details);
+    }
   }
 
   selectCell(event) {
@@ -60,5 +86,6 @@ export class TimecardGridComponent implements OnInit {
     document.execCommand('copy');
     document.body.removeChild(selBox);
   }
+
 
 }
