@@ -14,20 +14,32 @@
 
 .timecard div table {
   width: 100%;
-  min-width: 650px;
 }
 
-.timecard div table .header input {
-  width: 100%;
+.timecard div table .header div{
+  display: flex !important;
+  align-content: space-between;
+  margin: 0 0 0 3px;
+  min-width: 160px;
+}
+
+.timecard div table .header div a{
+  margin: auto 10px auto auto;
+}
+
+.timecard div table .header div input {
   padding: 1rem 0rem;
   letter-spacing: 2px;
   background-color: transparent;
   border: 0px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
+  width:70%;
+  font-size: .9rem;
+  margin-left: 10px;
 }
 
-.timecard div table .header input:focus {
+.timecard div table .header div input:focus {
   outline: none;
   color: #95959e;
 }
@@ -89,6 +101,7 @@
 }
 
 .copy-button{
+  margin-left: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: .8rem;
@@ -98,6 +111,7 @@
   margin-top: 2rem;
   padding: 1rem 1.5rem;
 }
+
 .copy-button:hover{
   background-color: #66C7C9;
   color: #ffffff;
@@ -116,15 +130,53 @@
   line-height: 2rem;
 }
 
+.add-button{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8rem;
+  font-weight: 600;
+  border-color: #66C7C9;
+  color: #66C7C9;
+  padding: .3rem .5rem;
+}
+.add-button:hover{
+  background-color: #66C7C9;
+  color: #ffffff;
+}
+
+.delete-button{
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #DC143C;
+  border-color: #DC143C;
+  padding: .3rem .5rem;
+}
+
+.delete-button:hover{
+  background-color: #DC143C;
+  color: #ffffff;
+}
+
+@media (max-width: 1600px) {
+  .timecard div table .header div input {
+    font-size: .8rem;
+  }
+
+}
 
 @media (max-width: 1200px) {
   .description{
     width: 100%;
   }
-
 }
 
 @media (max-width: 992px) {
+  .timecard div table .time {
+   font-size:.8rem;
+  }
+  .clickable-cell {
+    height: 1.6rem;
+  }
   .timecard-description {
     width: 100%;
   }

@@ -40,6 +40,7 @@
 .btn {
   padding: 2px 15px !important;
   border-color: #66c7c9;
+  color: #66c7c9;
 }
 
 .btn:hover,
@@ -54,8 +55,14 @@
   margin: 0 auto;
 }
 
+@media (max-width: 780px) {
+  .phrase {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 480px) {
   .phrase {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }

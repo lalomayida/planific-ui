@@ -7,43 +7,30 @@
             <thead>
               <tr>
                 <th width="5%"></th>
-                <th
-                  width="{{ 95 / details.headers.length }}%"
-                  class="header"
-                  *ngFor="
+                <th width="{{ 95 / details.headers.length }}%" class="header" *ngFor="
                     let header of details.headers;
                     let j = index;
                     trackBy: trackByFn
-                  "
-                >
-                  <input
-                    type="text"
-                    [(ngModel)]="details.headers[j]"
-                    (blur)="changeNames()"
-                  />
+                  ">
+                  <div class="row">
+                    <input type="text" [(ngModel)]="details.headers[j]" (blur)="changeNames()" maxlength="15"/>
+                    <a *ngIf="sampleArray.length > 2" class="btn delete-button" (click)="deleteColumn(j)"> <i class="fas fa-times"></i> </a>
+                  </div>
                 </th>
+                <th *ngIf="sampleArray.length < 7"> <a class="btn add-button" (click)="addColumn()"> <i class="fas fa-plus"></i> </a> </th>
               </tr>
             </thead>
             <tbody>
-              <tr
-                *ngFor="let timecard of details.data; let i = index"
-              >
+              <tr *ngFor="let timecard of details.data; let i = index">
                 <td *ngIf="timecard.time.hour.includes(':00')" class="time">
-                  <span>{{ timecard.time.hour }}</span
-                  ><br />{{ timecard.time.meridian }}
+                  <span>{{ timecard.time.hour }}</span><br />{{ timecard.time.meridian }}
                 </td>
-                <td
-                  *ngIf="timecard.time.hour.includes(':30')"
-                  class="time"
-                  id="{{ i }}"
-                ></td>
-                <td
-                  *ngFor="let personTime of timecard.availability"
-                  class="cell-border clickable-cell"
-                  id="{{ i }}"
+                <td *ngIf="timecard.time.hour.includes(':30')" class="time" id="{{ i }}"></td>
+                <td *ngFor="let personTime of timecard.availability" class="cell-border clickable-cell" id="{{ i }}"
                   (click)="selectCell($event)"
-                  [ngClass]="{'busy': personTime === false ,'available': personTime === true , 'whole-match': arraysEqual(timecard.availability,sampleArray)}"
-                ></td>
+                  [ngClass]="{'busy': personTime === false ,'available': personTime === true , 'whole-match': arraysEqual(timecard.availability,sampleArray)}">
+                </td>
+                <td ></td>
               </tr>
             </tbody>
           </table>
@@ -51,7 +38,8 @@
       </div>
       <div class="timecard-link">
         <h2>Comparte esta reunión</h2>
-        <p class="description">Todas las reuniones se eliminarán de forma automática dos días después de la fecha indicada</p>
+        <p class="description">Todas las reuniones se eliminarán de forma automática dos días después de la fecha
+          indicada</p>
         <div class="timecard-link-buttons row">
           <a class="timecard-url">{{url}}</a>
           <a class="btn btn-lg copy-button" (click)="copyUrl()">Copiar link</a>
