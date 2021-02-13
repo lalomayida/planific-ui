@@ -51,7 +51,7 @@ export class TimecardGridComponent implements OnInit {
   }
 
   deleteColumn(columnId) {
-    if (this.sampleArray.length > 1) {
+    if (this.sampleArray.length > 2) {
       this.sampleArray.pop()
       this.details.headers.splice(columnId, 1);
       this.details.data.forEach(slot => {

@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid text-center">
   <div class="container jumbotron-childs">
     <h1 class="display-3 phrase">
-      <input type="text" [(ngModel)]="title" (blur)="editTitle()" />
+      <input type="text" [(ngModel)]="title" (blur)="editTitle()" maxlength="20"/>
     </h1>
     <div class="input-group">
       <input class="form-control" placeholder="Selecciona una fecha" name="dp" [(ngModel)]="date" ngbDatepicker

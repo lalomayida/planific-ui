@@ -13,11 +13,11 @@
                     trackBy: trackByFn
                   ">
                   <div class="row">
-                    <input type="text" [(ngModel)]="details.headers[j]" (blur)="changeNames()" />
-                    <a class="btn delete-button" (click)="deleteColumn(j)"> <i class="fas fa-trash"></i> </a>
+                    <input type="text" [(ngModel)]="details.headers[j]" (blur)="changeNames()" maxlength="15"/>
+                    <a *ngIf="sampleArray.length > 2" class="btn delete-button" (click)="deleteColumn(j)"> <i class="fas fa-times"></i> </a>
                   </div>
                 </th>
-                <th> <a class="btn add-button" (click)="addColumn()"> <i class="fas fa-plus"></i> </a> </th>
+                <th *ngIf="sampleArray.length < 7"> <a class="btn add-button" (click)="addColumn()"> <i class="fas fa-plus"></i> </a> </th>
               </tr>
             </thead>
             <tbody>
@@ -30,7 +30,7 @@
                   (click)="selectCell($event)"
                   [ngClass]="{'busy': personTime === false ,'available': personTime === true , 'whole-match': arraysEqual(timecard.availability,sampleArray)}">
                 </td>
-                <td></td>
+                <td ></td>
               </tr>
             </tbody>
           </table>
