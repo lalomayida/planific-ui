@@ -1,16 +1,16 @@
-import { TimecardDetails } from "./timecardDetails";
+import { DailyTimecardDetails } from "./daily-timecardDetails";
 
-export class Timecard {
+export class DailyTimecard {
   id: string;
   title: string;
   date: Object;
-  details: TimecardDetails;
+  details: DailyTimecardDetails;
 
   constructor(
     __id: string,
     __title: string,
     __date: Object,
-    __details: TimecardDetails
+    __details: DailyTimecardDetails
   ){
       this.id = __id;
       this.title = __title;

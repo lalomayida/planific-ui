@@ -1,6 +1,6 @@
-import { SlotTime } from './slotTime';
+import { SlotTime } from '../slotTime';
 
-export class Slot {
+export class DailySlot {
   time: SlotTime;
   availability: Array<any>;
 
