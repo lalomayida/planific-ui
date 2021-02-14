@@ -1,0 +1,54 @@
+<div class="row timecard-container">
+    <div class="col-md-12">
+        <div class="participant-names">
+            <div class="row">
+                <div *ngFor="let person of details.headers; let j = index;
+                trackBy: trackByFn">
+                    <input type="text" [(ngModel)]="details.headers[j]" (blur)="changeNames()" maxlength="15" />
+                    <a *ngIf="sampleArray.length > 2" class="btn delete-button" (click)="deleteColumn(j)"> <i class="fas fa-times"></i> </a>
+                </div>
+                <div class="add-button-container" *ngIf="sampleArray.length < 7">
+                    <a class="btn add-button" (click)="addColumn()">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="timecard">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="5%"></th>
+                            <th width="{{ 95 / date.length }}%" class="header" *ngFor="
+                                    let day of date;
+                                    ">
+                                {{day.day}} - {{getMonthName(day.month)}} - {{day.year}}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let timecard of details.data; let rowNumber = index">
+                            <td *ngIf="timecard.time.hour.includes(':00')" class="time">
+                                <span>{{ timecard.time.hour }}</span>
+                                <br />
+                                {{ timecard.time.meridian }}
+                            </td>
+                            <td *ngIf="timecard.time.hour.includes(':30')" class="time"></td>
+                            <td *ngFor="let weeklyPersonTime of timecard.availability; let dayNumber = index"
+                                class="clickable-cell">
+                                <div class="day-row">
+                                    <div *ngFor="let dailyPersonTime of weeklyPersonTime; let columnNumber = index"
+                                        class="cell-border inner-cell"
+                                        (click)="selectCell(dayNumber,rowNumber,columnNumber)"
+                                        [ngClass]="{'busy': dailyPersonTime === false ,'available': dailyPersonTime === true, 'whole-match': arraysEqual(weeklyPersonTime,sampleArray)}">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
-import { TimecardDetails } from 'src/app/models/timecardDetails';
+import { DailyTimecardDetails } from 'src/models/daily-timecard/daily-timecardDetails';
 
 @Component({
   selector: 'app-timecard-grid',
@@ -8,7 +8,7 @@ import { TimecardDetails } from 'src/app/models/timecardDetails';
 })
 export class TimecardGridComponent implements OnInit {
 
-  @Input() details: TimecardDetails;
+  @Input() details: DailyTimecardDetails;
   @Input() id: string;
 
   @Output() onEdit: EventEmitter<any> = new EventEmitter();

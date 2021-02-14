@@ -23,9 +23,13 @@ import { CreatePageComponent } from './create-page/create-page.component';
 import { TimecardHeaderComponent } from './timecard-header/timecard-header.component';
 import { TimecardGridComponent } from './timecard-grid/timecard-grid.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { WeeklyTimecardPageComponent } from './weekly-timecard-page/weekly-timecard-page.component';
+import { WeeklyTimecardGridComponent } from './weekly-timecard-grid/weekly-timecard-grid.component';
+import { WeeklyTimecardHeaderComponent } from './weekly-timecard-header/weekly-timecard-header.component';
+import { TimecardTypeSelectorPageComponent } from './timecard-type-selector-page/timecard-type-selector-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent, CreatePageComponent, TimecardHeaderComponent, TimecardGridComponent, ErrorPageComponent],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, LandingPageComponent, AdvantagesComponent, QualitiesComponent, DonateComponent, FooterComponent, CreatePageComponent, TimecardHeaderComponent, TimecardGridComponent, ErrorPageComponent, WeeklyTimecardPageComponent, WeeklyTimecardGridComponent, WeeklyTimecardHeaderComponent, TimecardTypeSelectorPageComponent],
   imports: [
     BrowserModule,
     NgbModule,

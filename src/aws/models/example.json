@@ -1,0 +1,529 @@
+{
+  "id": "12090f97-9f02-4ee0-ba62-874e5b02c4b7",
+  "title": "trytytytyttytytyt",
+  "date": [
+    {
+      "day": 12,
+      "month": 2,
+      "year": 2021
+    },
+    {
+      "day": 13,
+      "month": 2,
+      "year": 2021
+    }
+  ],
+  "details": {
+    "headers": ["Participante", "Participante"],
+    "data": [
+      [
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "6:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "6:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "7:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "7:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "9:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "9:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "10:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "10:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "11:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "11:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "12:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "12:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "1:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "1:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "2:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "2:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "3:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "3:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "4:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "4:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "5:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "5:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "6:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "6:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "7:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "7:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "9:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "9:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "10:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "10:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "11:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "11:30",
+            "meridian": "pm"
+          }
+        }
+      ],
+      [
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "6:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "6:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "7:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "7:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "9:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "9:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "10:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "10:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "11:00",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "11:30",
+            "meridian": "am"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "12:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "12:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "1:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "1:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "2:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "2:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "3:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "3:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "4:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "4:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "5:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "5:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "6:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "6:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "7:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "7:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [false, false],
+          "time": {
+            "hour": "8:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "9:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "9:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "10:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "10:30",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "11:00",
+            "meridian": "pm"
+          }
+        },
+        {
+          "availability": [true, false],
+          "time": {
+            "hour": "11:30",
+            "meridian": "pm"
+          }
+        }
+      ]
+    ]
+  }
+}

@@ -3,7 +3,7 @@ import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TimecardService } from 'src/services/timecard/timecard.service';
 
-import { Timecard } from 'src/app/models/timecard';
+import { DailyTimecard } from 'src/models/daily-timecard/daily-timecard';
 import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
 @Component({
   selector: 'app-create-page',
@@ -12,7 +12,7 @@ import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
 })
 export class CreatePageComponent implements OnInit {
   model: NgbDateStruct;
-  timecard: Timecard = new Timecard(undefined, undefined, undefined, undefined);
+  timecard: DailyTimecard = new DailyTimecard(undefined, undefined, undefined, undefined);
 
   constructor(private calendar: NgbCalendar,
     private timecardService: TimecardService,
