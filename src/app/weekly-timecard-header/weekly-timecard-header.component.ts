@@ -56,11 +56,11 @@ export class WeeklyTimecardHeaderComponent implements OnInit {
   }
 
   editTitle(){
-    this.onEditTitle.emit(this.title);
+    //this.onEditTitle.emit(this.title);
   }
 
   editDate(){
-    this.onEditDate.emit(this.date);
+    //this.onEditDate.emit(this.date);
   }
 
 }

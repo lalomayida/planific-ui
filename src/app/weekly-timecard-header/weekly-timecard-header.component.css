@@ -11,6 +11,8 @@
   height: 100%;
   width: 100%;
   overflow-wrap: break-word;
+  font-size: 4.5rem;
+
 }
 
 .phrase input:focus {
@@ -23,7 +25,6 @@
 }
 
 .input-group {
-  width: 300px;
   margin: 0 auto;
 }
 
@@ -34,7 +35,7 @@
   font-weight: 600;
   border-color: #66c7c9;
   color: #66c7c9;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem !important;
 }
 
 .form-group.hidden {
@@ -42,6 +43,10 @@
   margin: 0;
   border: none;
   padding: 0;
+}
+
+.form-inline{
+  margin: 0 auto;
 }
 
 .custom-day {
