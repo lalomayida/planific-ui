@@ -8,21 +8,17 @@
   background-color: #f5f6f9;
 }
 
-.timecard div {
-  overflow-x: auto;
-}
-
 .timecard div table {
   width: 100%;
 }
 
-.participant-names{
+.participant-names {
   display: inline-block;
   padding-bottom: 2rem;
 }
 
 .timecard div table .header div,
-.participant-names .row{
+.participant-names .row {
   display: flex !important;
   align-content: space-between;
   margin: 0 0 0 3px;
@@ -33,7 +29,8 @@
   margin: auto 10px auto auto;
 }
 
-.add-button-container{
+.add-button-container {
+  text-align: right;
   display: flex;
   align-items: center;
 }
@@ -81,7 +78,6 @@ input:focus {
   padding: 0;
   border-left: 1px solid #95959e;
   border-right: 1px solid #95959e;
-
 }
 
 .day-row {

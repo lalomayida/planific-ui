@@ -1,68 +1,97 @@
 .jumbotron {
-    background-color: transparent;
-    padding-bottom: 0px;
+  background-color: transparent;
+  padding-bottom: 0px;
+}
+
+.phrase input {
+  font-weight: 600;
+  background-color: transparent;
+  border: 0px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.phrase input:focus {
+  outline: none;
+  color: #95959e;
+}
+
+.jumbotron-childs > * {
+  padding-bottom: 2rem;
+}
+
+.input-group {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form-control {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-color: #66c7c9;
+  color: #66c7c9;
+  padding: 1rem 1.5rem;
+}
+
+.form-group.hidden {
+  width: 0;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.custom-day {
+  text-align: center;
+  padding: 0.185rem 0.25rem;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.custom-day.focused {
+  background-color: #e6e6e6;
+}
+
+.custom-day.range,
+.custom-day:hover {
+  background-color: rgb(2, 117, 216);
+  color: white;
+}
+
+.custom-day.faded {
+  background-color: rgba(2, 117, 216, 0.5);
+}
+
+.btn {
+  padding: 2px 15px !important;
+  border-color: #66c7c9;
+  color: #66c7c9;
+}
+
+.btn:hover,
+.btn:active {
+  color: #ffffff;
+  background-color: #66c7c9;
+}
+
+.tip {
+  font-size: 0.8rem;
+  color: #95959e;
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  .phrase {
+    font-size: 2.5rem;
   }
-  
-  .phrase input{
-    font-weight: 600;
-    background-color: transparent;
-    border: 0px;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .phrase {
+    font-size: 2rem;
   }
-  
-  .phrase input:focus {
-    outline: none;
-    color: #95959e;
-  }
-  
-  .jumbotron-childs > * {
-    padding-bottom: 2rem;
-  }
-  
-  .input-group {
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-  .form-control {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    border-color: #66c7c9;
-    color: #66c7c9;
-    padding: 1rem 1.5rem;
-  }
-  
-  .btn {
-    padding: 2px 15px !important;
-    border-color: #66c7c9;
-    color: #66c7c9;
-  }
-  
-  .btn:hover,
-  .btn:active {
-    color: #ffffff;
-    background-color: #66c7c9;
-  }
-  
-  .tip {
-    font-size: 0.8rem;
-    color: #95959e;
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 780px) {
-    .phrase {
-      font-size: 2.5rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .phrase {
-      font-size: 2rem;
-    }
-  }
+}

@@ -1,16 +1,45 @@
 <div class="jumbotron jumbotron-fluid text-center">
   <div class="container jumbotron-childs">
-    <h1 class="display-3 phrase">
+    <h1 class="phrase">
       <input type="text" [(ngModel)]="title" (blur)="editTitle()" maxlength="20" />
     </h1>
     <div class="input-group">
-      <input class="form-control" placeholder="Selecciona una fecha" name="dp" [(ngModel)]="date" ngbDatepicker
-        [minDate]="today" #d="ngbDatepicker" (dateSelect)="editDate()" />
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
-          <i class="fas fa-calendar"></i>
-        </button>
-      </div>
+      <form class="form-inline">
+        <div class="form-group hidden">
+          <div class="input-group">
+            <input name="datepicker" class="form-control" ngbDatepicker #datepicker="ngbDatepicker"
+              [autoClose]="'outside'" (dateSelect)="onDateSelection($event)" [displayMonths]="1" [dayTemplate]="t"
+              outsideDays="hidden" [startDate]="fromDate!" tabindex="-1">
+            <ng-template #t let-date let-focused="focused">
+              <span class="custom-day" [class.focused]="focused" [class.range]="isRange(date)"
+                [class.faded]="isHovered(date) || isInside(date)" (mouseenter)="hoveredDate = date"
+                (mouseleave)="hoveredDate = null">
+                {{ date.day }}
+              </span>
+            </ng-template>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <input #dpFromDate class="form-control" placeholder="yyyy-mm-dd" name="dpFromDate"
+              [value]="formatter.format(fromDate)" (input)="fromDate = validateInput(fromDate, dpFromDate.value)">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary calendar" (click)="datepicker.toggle()" type="button"><i
+                  class="fas fa-calendar"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <input #dpToDate class="form-control" placeholder="yyyy-mm-dd" name="dpToDate"
+              [value]="formatter.format(toDate)" (input)="toDate = validateInput(toDate, dpToDate.value)">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary calendar" (click)="datepicker.toggle()" type="button"><i
+                  class="fas fa-calendar"></i></button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
     <div class="tip col-md-4">
       <P>Tip: Presiona en las casillas para indicar los espacios en los que tienes tiempo libre
