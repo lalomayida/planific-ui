@@ -1,5 +1,11 @@
 # PlanificUi
 
+Planific.io is a platform designed to make scheduling easier, visit [planific.io](www.planific.io)
+
+# Architecture Diagram
+
+![Architecture Diagram](https://drive.google.com/file/d/1X7JI2nepXPMiIvLdJxZmEVPE23d8p2X3/view?usp=sharing)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 ## Development server
