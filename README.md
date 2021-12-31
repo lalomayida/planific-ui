@@ -4,7 +4,7 @@ Planific.io is a platform designed to make scheduling easier, visit [planific.io
 
 # Architecture Diagram
 
-![Architecture Diagram](https://drive.google.com/file/d/1X7JI2nepXPMiIvLdJxZmEVPE23d8p2X3/view?usp=sharing)
+![Architecture Diagram](https://drive.google.com/uc?export=view&id=1X7JI2nepXPMiIvLdJxZmEVPE23d8p2X3)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
