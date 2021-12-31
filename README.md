@@ -1,6 +1,6 @@
 # PlanificUi
 
-Planific.io is a platform designed to make scheduling easier, visit [planific.io](https://www.planific.io)
+Planific.io is a platform designed to make scheduling easier, visit [planific.io](https://www.planific.io) to know more
 
 # Architecture Diagram
 
