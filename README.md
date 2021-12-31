@@ -4,6 +4,8 @@ Planific.io is a platform designed to make scheduling easier, visit [planific.io
 
 # Architecture Diagram
 
+Planific.io follows a serverless approach, the arquitecture under which it was developed is shown bellow
+
 ![Architecture Diagram](https://drive.google.com/uc?export=view&id=1X7JI2nepXPMiIvLdJxZmEVPE23d8p2X3)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
